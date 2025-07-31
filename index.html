@@ -1,8 +1,109 @@
-<h1 style="font-size:10vw; font-family:Comfortaa"> 3D</h1>
-<body style="background-color: #2DBFE0;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Print Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #2DBFE0, #1CA4C0);
+      font-family: 'Comfortaa', sans-serif;
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-<h1 style="font-size:7vw; font-family:Comfortaa"> Shop</h1><br></Br>
-<p style="font-size:4vw; font-family:Comfortaa"> pricing</p>
-<p style="font-size:3vw; font-family:Comfortaa"> 50c per gram for pla 10% tax every plate is that many x the price(2=2x) price varies with printer</p>
-<p style="font-size:3vw; font-family:Comfortaa"> A1 mini 1x</p>
+    header {
+      padding: 3vh 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h1.main-title {
+      font-size: 12vw;
+      margin: 0;
+      text-shadow: 0 0 10px #00f6ff, 0 0 20px #00f6ff;
+    }
+
+    h2.shop-title {
+      font-size: 8vw;
+      margin: 4vh 0 2vh;
+      text-shadow: 0 0 6px #ffffff66;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 4vh 6vw;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 0 20px #00000044;
+    }
+
+    p {
+      font-size: 5vw;
+      margin: 2vh 0;
+    }
+
+    .note {
+      font-size: 4.5vw;
+      font-style: italic;
+      color: #d1f7ff;
+    }
+
+    .highlight {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    .footer {
+      padding: 3vh 0;
+      font-size: 3.5vw;
+      color: #e0ffffaa;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    @media (min-width: 700px) {
+      h1.main-title { font-size: 6vw; }
+      h2.shop-title { font-size: 4vw; }
+      p { font-size: 2.5vw; }
+      .note { font-size: 2.2vw; }
+      .footer { font-size: 1.8vw; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="main-title">3D</h1>
+  </header>
+
+  <h2 class="shop-title">Print Shop</h2>
+
+  <div class="content">
+    <p class="highlight">💰 Pricing Breakdown:</p>
+    <p><span class="highlight">50¢ per gram</span> for PLA plastic</p>
+    <p><span class="highlight">10% sales tax</span> added to total</p>
+    <p>Each print is based on the number of "plates" (print jobs):<br>
+    <span class="highlight">1 plate = base price</span>,<br>
+    <span class="highlight">2 plates = 2× base price</span>, and so on</p>
+    <p class="note">Final cost may vary slightly depending on the printer used.</p>
+    <p><span class="highlight">A1 Mini printer</span> uses a 1× price multiplier.</p>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 DGT432's 3D Print Shop 🚀
+  </div>
+
+</body>
+</html>
